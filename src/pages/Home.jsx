@@ -1,5 +1,40 @@
+import { Row } from 'reactstrap'
 import Tanjiro from '../assets/tanjiro-kamado.png'
-import BgHero from '../assets/demon-slayer-bg-hero.jpg'
+import ManhwaList from '../UI/ManhwaList'
+
+
+const ManhwaTrending = [
+  {
+    poster: 'https://cdn-amz.woka.io/images/I/816av3JOFCS.jpg',
+    title: 'One piece',
+    chapter: 'Chapter 1079',
+    rate: 4.3,
+  },
+  {
+    poster: 'https://cdn-amz.woka.io/images/I/81QcCmi+u6L.jpg',
+    title: 'Black cover',
+    chapter: 'Chapter 365',
+    rate: 4.3,
+  },
+  {
+    poster: 'https://cdn-amz.woka.io/images/I/81s+jxE5KEL.jpg',
+    title: 'Jujutsu Kaisen',
+    chapter: 'Chapter 218',
+    rate: 4.3,
+  },
+  {
+    poster: 'https://ecdn.game4v.com/g4v-content/uploads/2022/07/30120055/Chainsaw-anime-1-game4v-1659157253-90.png',
+    title: 'Chainsawman',
+    chapter: 'Chapter 125',
+    rate: 4.3,
+  },
+  {
+    poster: 'https://m.media-amazon.com/images/I/613rnZy0RtL._AC_UF894,1000_QL80_.jpg',
+    title: 'Lookism',
+    chapter: 'Chapter 453',
+    rate: 4.3,
+  },
+]
 
 const Home = () => {
   return (
@@ -29,10 +64,18 @@ const Home = () => {
         </div>
       </div>
 
-    {/* New released comic */}
+      {/* New released comic */}
 
       <div className='px-[8rem] pt-10'>
-        <h1 className='text-left text-[2.5rem] leading-[5.5rem] font-extrabold italic'>NEW RELEASED COMIC</h1>
+        <h1 className='text-left text-[2.5rem] leading-[5.5rem] font-extrabold italic mb-10'>NEW RELEASED COMIC</h1>
+        <div className='flex justify-around items-center'> 
+          <ManhwaList data={ManhwaTrending} />
+        </div>
+      </div>
+
+      {/* Explore by interest */}
+      <div className='px-[8rem] pt-10'>
+        <h1 className='text-center text-[2.5rem] leading-[5.5rem] font-extrabold italic'>EXPLORE BY INTEREST</h1>
       </div>
     </div>
   )
