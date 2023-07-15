@@ -23,7 +23,7 @@ const nav__links = [
 
 const Header = () => {
   return (
-    <div className="w-full flex justify-between items-center bg-white sm:px-10 px-6 py-6 border-b border-b-[#e6ebf4]">
+    <div className="bg-zinc-900/30 backdrop-blur-sm w-full flex justify-between items-center  sm:px-[8rem] px-6 py-4 text-white sticky top-0 left-0 z-10">
       <div className="flex items-center">
         <Link to="/">
           <h1 className="font-black text-[1.2rem] pr-8">HEROMANHWA</h1>
@@ -33,7 +33,9 @@ const Header = () => {
             {nav__links.map((item) => (
               <li key={item.id} className="font-medium text-[0.9rem]">
                 <NavLink
-                  className={(navClass) => (navClass.isActive ? "font-bold" : "")}
+                  className={(navClass) =>
+                    navClass.isActive ? "font-bold" : ""
+                  }
                   to={item.path}
                 >
                   {item.display}
@@ -43,14 +45,15 @@ const Header = () => {
           </ul>
         </div>
       </div>
-      
+
       <div className="relative flex w-full max-w-[24rem]">
         <Input
+          size="lg"
           clearable
-          contentRight={
+          contentLeft={
             <svg
               aria-hidden="true"
-              className="w-6 h-6"
+              className="w-5 h-5"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -69,6 +72,12 @@ const Header = () => {
             w: "100%",
             "@xsMax": {
               mw: "300px",
+            },
+            '& .nextui-input-wrapper': {
+              background: '#1E1D22', // Đổi màu nền sang màu đen
+            },
+            '& .nextui-input, & .nextui-input-placeholder': {
+              color: 'white', // Đổi màu chữ sang màu trắng
             },
             "& .nextui-input-content--left": {
               h: "100%",
