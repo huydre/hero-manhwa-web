@@ -2,7 +2,7 @@ import { Col } from 'reactstrap'
 
 const ManhwaCard = ({item}) => {
   return (
-    <Col lg='3' md='4' className='flex justify-center'>
+    <div className='flex justify-center'>
         <div className='cursor-pointer mb-2 max-w-[220px] text-left space-y-3'>
             <div>
                 <img src={item.poster} alt="" />
@@ -20,7 +20,7 @@ const ManhwaCard = ({item}) => {
                 </div>
             </div>
         </div>
-    </Col>
+    </div>
   )
 }
 

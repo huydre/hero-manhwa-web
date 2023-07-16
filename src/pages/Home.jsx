@@ -80,17 +80,17 @@ const Home = () => {
 
       {/* New released comic */}
 
-      <div className=" pt-10  px-[15rem]">
+      <div className=" pt-10  px-[15rem] grid justify-center">
         <h1 className="text-left text-[2.5rem] leading-[5.5rem] font-extrabold italic mb-10 pb-10">
           NEW RELEASED COMIC
         </h1>
-        <div className="flex justify-around items-center ">
+        <div className="flex justify-around items-center min-w-[1100px]">
           <ManhwaList data={ManhwaTrending} />
         </div>
       </div>
 
       {/* Explore by interest */}
-      <div className="px-[15rem] pt-10">
+      <div className="px-[15rem] pt-10 grid grid-cols-1 justify-items-center">
         <h1 className="text-center text-[2.5rem] leading-[5.5rem] font-extrabold italic mb-10">
           EXPLORE BY INTEREST
         </h1>
