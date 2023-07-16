@@ -1,0 +1,11 @@
+#noisebg {
+    background:
+      linear-gradient(rgb(182,45,64), rgb(18,18,18)),
+      url('../assets/noise.svg');
+}
+
+#banner {
+  background: url('../assets/banner.png');
+}
+
+/* h-64 bg-gradient-to-b from-[#C62F44] to-[#121212] `${noisebg} */
