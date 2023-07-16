@@ -95,9 +95,29 @@ const Home = () => {
           EXPLORE BY INTEREST
         </h1>
         <div>
-        <Category/>
+          <Category />
+        </div>
       </div>
+      {/* Explore shonen jump */}
+      <div className=" pt-10  px-[15rem] grid justify-center">
+        <h1 className="text-left text-[2.5rem] leading-[5.5rem] font-extrabold italic pb-10">
+          WEEKLY SHONEN JUMP
+        </h1>
+        <div className="flex justify-around items-center min-w-[1100px]">
+          <ManhwaList unTitle={true} data={ManhwaTrending} />
+        </div>
       </div>
+
+      {/* JUMP PLUS */}
+      <div className=" pt-10  px-[15rem] grid justify-center">
+        <h1 className="text-left text-[2.5rem] leading-[5.5rem] font-extrabold italic pb-10">
+          JUMP PLUS
+        </h1>
+        <div className="flex justify-around items-center min-w-[1100px]">
+          <ManhwaList unTitle={true} data={ManhwaTrending} />
+        </div>
+      </div>
+
     </div>
   );
 };
