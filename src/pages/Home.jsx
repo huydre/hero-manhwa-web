@@ -3,45 +3,17 @@ import Tanjiro from "../assets/tanjiro-kamado.png";
 import ManhwaList from "../UI/ManhwaList";
 import Category from "../UI/Category";
 import "./Home.css";
-import { Input, Button } from "@material-tailwind/react";
-import banner from "../assets/banner.png";
+import { ManhwaTrending } from "../constants";
 
-const ManhwaTrending = [
-  {
-    poster: "https://cdn-amz.woka.io/images/I/816av3JOFCS.jpg",
-    title: "One piece",
-    chapter: "Chapter 1079",
-    rate: 4.3,
-  },
-  {
-    poster: "https://cdn-amz.woka.io/images/I/81QcCmi+u6L.jpg",
-    title: "Black cover",
-    chapter: "Chapter 365",
-    rate: 4.3,
-  },
-  {
-    poster:
-      "https://ecdn.game4v.com/g4v-content/uploads/2022/07/30120055/Chainsaw-anime-1-game4v-1659157253-90.png",
-    title: "Chainsawman",
-    chapter: "Chapter 125",
-    rate: 4.3,
-  },
-  {
-    poster:
-      "https://m.media-amazon.com/images/I/613rnZy0RtL._AC_UF894,1000_QL80_.jpg",
-    title: "Lookism",
-    chapter: "Chapter 453",
-    rate: 4.3,
-  },
-];
+import "swiper/css";
 
 const Home = () => {
   return (
     <div className="bg-[#121212] text-white">
       {/* Hero  */}
-      <div className="h-[768px] flex flex-col justify-between bg-[url('https://wallpapers.com/images/featured/demon-slayer-anime-vy37autfo82jvft7.jpg')] bg-center bg-cover text-white bg-black/90 bg-blend-overlay pb-4 ">
+      <div className="h-[768px] flex flex-col justify-between bg-[url('https://wallpapers.com/images/featured/demon-slayer-anime-vy37autfo82jvft7.jpg')] bg-center bg-cover text-white bg-black/90 bg-blend-overlay pb-8">
         <div>
-          <h1 className="font-semibold text-center mb-4 pt-12">
+          <h1 className="font-semibold text-center mb-4 pt-[100px]">
             ADVENTURE; DARK FANTASY; MARTIAL ARTS;
           </h1>
           <h1 className="text-[5rem] leading-[5.5rem] font-extrabold italic text-center">
@@ -49,13 +21,13 @@ const Home = () => {
           </h1>
           <div className="relative">
             <img
-              className="absolute left-1/2 -translate-x-60  scale-125 translate-y-4"
+              className="absolute left-1/2 -translate-x-60  scale-125 translate-y-4 z-0"
               src={Tanjiro}
               alt=""
             />
           </div>
         </div>
-        <div className="flex justify-between px-[15rem] z-20">
+        <div className="flex justify-between px-[15rem] z-10">
           <div className="w-1/3 text-left text-lg ">
             <p>
               Who strives to become a demon slayer after his family was
@@ -87,7 +59,7 @@ const Home = () => {
         <h1 className="text-left text-[2.5rem] leading-[5.5rem] font-extrabold italic mb-10 pb-10">
           NEW RELEASED COMIC
         </h1>
-        <div className="flex justify-around items-center min-w-[1100px]">
+        <div className="flex justify-around items-center max-w-[1100px]">
           <ManhwaList data={ManhwaTrending} />
         </div>
       </div>
@@ -106,7 +78,7 @@ const Home = () => {
         <h1 className="text-left text-[2.5rem] leading-[5.5rem] font-extrabold italic pb-10">
           WEEKLY SHONEN JUMP
         </h1>
-        <div className="flex justify-around items-center min-w-[1100px]">
+        <div className="flex justify-around items-center max-w-[1100px]">
           <ManhwaList unTitle={true} data={ManhwaTrending} />
         </div>
       </div>
@@ -116,7 +88,7 @@ const Home = () => {
         <h1 className="text-left text-[2.5rem] leading-[5.5rem] font-extrabold italic pb-10">
           JUMP PLUS
         </h1>
-        <div className="flex justify-around items-center min-w-[1100px]">
+        <div className="flex justify-around items-center max-w-[1100px]">
           <ManhwaList unTitle={true} data={ManhwaTrending} />
         </div>
       </div>
@@ -135,10 +107,10 @@ const Home = () => {
           TOP 8 POPULAR MANHWA
         </div>
 
-        <div className="flex justify-around items-center min-w-[1100px] mb-8">
+        <div className="flex justify-around items-center max-w-[1100px] mb-8">
           <ManhwaList unTitle={false} data={ManhwaTrending} />
         </div>
-        <div className="flex justify-around items-center min-w-[1100px]">
+        <div className="flex justify-around items-center max-w-[1100px]">
           <ManhwaList unTitle={false} data={ManhwaTrending} />
         </div>
       </div>
@@ -154,7 +126,7 @@ const Home = () => {
             <li className="mr-2">
               <a
                 href="#"
-                className="inline-block px-8 py-3 text-white bg-[#B62D40] rounded-full active"
+                className="inline-block px-8 py-3 text-white bg-primary rounded-full active"
                 aria-current="page"
               >
                 Sunday
@@ -202,10 +174,10 @@ const Home = () => {
           </ul>
         </div>
 
-        <div className="flex justify-around items-center min-w-[1100px] mb-8">
+        <div className="flex justify-around items-center max-w-[1100px] mb-8">
           <ManhwaList unTitle={true} data={ManhwaTrending} />
         </div>
-        <div className="flex justify-around items-center min-w-[1100px]">
+        <div className="flex justify-around items-center max-w-[1100px]">
           <ManhwaList unTitle={true} data={ManhwaTrending} />
         </div>
         <div className="mt-10">
@@ -221,8 +193,8 @@ const Home = () => {
         <div className="flex justify-between">
           <div>
             <div className="text-left text-[2.5rem] font-extrabold italic pb-10 pt-6">
-              UPDATE <span className="text-red">EVERYDAY</span> <br /> ONLY AT
-              HEROMANHWA
+              UPDATE <span className="text-red-500">EVERYDAY</span> <br /> ONLY
+              AT HEROMANHWA
             </div>
             <div className="text-left w-1/2 mb-10">
               Comics are always updated at 10AM and there is a notification if

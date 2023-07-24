@@ -1,11 +1,14 @@
 #noisebg {
     background:
       linear-gradient(rgb(182,45,64), rgb(18,18,18)),
-      url('../assets/noise.svg');
+      url('https://media.istockphoto.com/id/1188109914/video/grunge-overlay-old-film-effect-loop.jpg?s=480x480&k=20&c=_-3Oz_EUf7-YtE3sFCsLqMCSri1lIDQ5Wo8CBk8Z4js=');
+    background-blend-mode: screen;
 }
+
 
 #banner {
   background: url('../assets/banner.png');
 }
+
 
 /* h-64 bg-gradient-to-b from-[#C62F44] to-[#121212] `${noisebg} */

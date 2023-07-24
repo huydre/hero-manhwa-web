@@ -45,7 +45,7 @@ const Footer = () => {
         <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
           © 2023{" "}
           <a href="https://flowbite.com/" class="hover:underline">
-            Flowbite™
+            HeroManhwa™
           </a>
           . All Rights Reserved.
         </span>

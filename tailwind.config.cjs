@@ -3,9 +3,13 @@ const withMT = require("@material-tailwind/react/utils/withMT");
 
 // eslint-disable-next-line no-undef
 module.exports = withMT({
-  content: ["./src/**/*.{js,jsx}"],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      colors: {
+        primary: '#B62D40',
+        secondary: '#942939',
+      },
       screens: {
         xs: "480px",
         md: "768px",

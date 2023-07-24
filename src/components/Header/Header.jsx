@@ -23,7 +23,7 @@ const nav__links = [
 
 const Header = () => {
   return (
-    <div className="bg-zinc-900/30 backdrop-blur-sm w-full flex justify-between items-center  sm:px-[8rem] px-6 py-4 text-white sticky top-0 left-0 z-10">
+    <div className=" backdrop-blur-sm w-full flex justify-between items-center  sm:px-[8rem] px-6 py-4 text-white fixed top-0 left-0 z-20 bg-gradient-to-b from-black/80 via-black/60 to-transparent shadow-xl">
       <div className="flex items-center">
         <Link to="/">
           <h1 className="font-black text-[1.2rem] pr-8">HEROMANHWA</h1>

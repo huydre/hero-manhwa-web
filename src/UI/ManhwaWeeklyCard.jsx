@@ -1,4 +1,4 @@
-import { Col } from 'reactstrap'
+
 
 const ManhwaWeeklyCard = ({item}) => {
   return (

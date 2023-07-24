@@ -1,0 +1,3 @@
+- Dùng useRef vào SwiperJS ở nút button hiển thị có khả năng next hay prev hay không
+
+- Sử dụng Framer Motion để khi hover vào nó sẽ expand ra
